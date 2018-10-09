@@ -1,2 +1,2 @@
 # typescript
-介绍ts用法，对比ts与js
+ts是ecmascript的超集，它是基于最新的ecmascript的标准
