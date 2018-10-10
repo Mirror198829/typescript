@@ -1,7 +1,11 @@
-# typescript
-ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能
-## 基础类型
-``` javascript
+/*
+ * @Author: caojing https://github.com/Mirror198829 
+ * @Date: 2018-10-10 10:45:50 
+ * @Last Modified by: caojing https://github.com/Mirror198829
+ * @Last Modified time: 2018-10-10 11:24:17
+ */
+
+ //基础类型
  //布尔类型
  let isShow: boolean = false;
  //数字类型
@@ -38,5 +42,8 @@ console.log(c1) //2
 enum Color2 {Red = 1, Green, Blue}
 let colorName: string = Color2[2];
 console.log(colorName);  // 显示'Green'因为上面代码里它的值是2
-```
 
+/**
+ * Any
+ * 为不清楚类型的变量指定一个类型
+ */
