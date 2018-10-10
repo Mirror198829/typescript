@@ -33,4 +33,13 @@ var Color2;
 })(Color2 || (Color2 = {}));
 var colorName = Color2[2];
 console.log(colorName);
+var notSure = 4;
+notSure = 'not sure';
+notSure = false;
+var anyLst = [1, true, 'free'];
+function warnUser() {
+    console.log('this is void type');
+}
+var unusable = undefined;
+var unusable1 = null;
 //# sourceMappingURL=tsc.js.map
