@@ -2,7 +2,7 @@
  * @Author: caojing https://github.com/Mirror198829 
  * @Date: 2018-10-10 10:45:50 
  * @Last Modified by: caojing https://github.com/Mirror198829
- * @Last Modified time: 2018-10-10 14:27:05
+ * @Last Modified time: 2018-10-10 15:01:20
  */
 
  //基础类型
@@ -42,6 +42,17 @@ console.log(c1) //2
 enum Color2 {Red = 1, Green, Blue}
 let colorName: string = Color2[2];
 console.log(colorName);  // 显示'Green'因为上面代码里它的值是2
+
+//枚举应用，代替以下的写法
+let obj = {
+    init:0,
+    success:1,
+    error:2
+}
+let res
+if(res == obj.success){
+
+}
 
 /**
  * Any
