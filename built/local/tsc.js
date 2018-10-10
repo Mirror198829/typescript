@@ -1,3 +1,29 @@
+function fn1(x, y) {
+    return x + y;
+}
+fn1(10, 20);
+var fn2 = function (x, y) {
+    return x + y;
+};
+function fn3(x, y) {
+    return x + y;
+}
+fn3(0);
+function fn4(x, y) {
+    if (y === void 0) { y = 1; }
+    return x + y;
+}
+fn4(1);
+function fn5(x, y) {
+    if (typeof x == 'number') {
+        return x * y;
+    }
+    else {
+        return x + y;
+    }
+}
+fn5(1, 2);
+fn5('abc', 'edf');
 var isShow = false;
 var decLiteral = 6;
 var hexLiteral = 0xf00d;
@@ -33,6 +59,14 @@ var Color2;
 })(Color2 || (Color2 = {}));
 var colorName = Color2[2];
 console.log(colorName);
+var obj = {
+    init: 0,
+    success: 1,
+    error: 2
+};
+var res;
+if (res == obj.success) {
+}
 var notSure = 4;
 notSure = 'not sure';
 notSure = false;
@@ -42,4 +76,20 @@ function warnUser() {
 }
 var unusable = undefined;
 var unusable1 = null;
+var u = undefined;
+var n = null;
+function error(message) {
+    throw new Error(message);
+}
+function fail() {
+    return error("Something failed");
+}
+function infiniteLoop() {
+    while (true) {
+    }
+}
+var someValue = "this is a string";
+var strLength = someValue.length;
+var someValue1 = "this is a string";
+var strLength1 = someValue.length;
 //# sourceMappingURL=tsc.js.map
