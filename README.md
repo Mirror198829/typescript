@@ -100,3 +100,91 @@ let strLength: number = (<string>someValue).length;
 let someValue1: any = "this is a string";
 let strLength1: number = (someValue as string).length;
 ```
+## 类
+``` javascript
+//es6,写法更加繁复
+// class Person{
+//     constructor(name){
+//         this.name = name ;
+//     }
+// }
+class Person {
+    public username:string;
+    protected age:number;
+    readonly gender:string;
+    constructor(username:string,age:number,gender:string){
+        this.username = username
+        this.age = age
+        this.gender = gender
+    }
+    say():void{
+        console.log(`hello ${this.username} , my age is ${this.age},my sex is ${this.gender}`)
+    }
+}
+ let p1:Person = new Person('caojing',18,'男')
+ p1.say()
+//console.log(p1.age) //错误 age是protect的
+class Student extends Person{
+    constructor(username:string,age:number,gender:string){
+        super(username,age,gender)
+    }
+    getAge():number{
+        return this.age
+    }
+}
+let s1:Student = new Student('cccc',18,'女')
+s1.say()
+s1.username = 'ccc'
+console.log(s1.username)
+//s1.gender = '女' //readonly的是不允许修改值的
+console.log(s1.gender)
+console.log(s1.getAge())//18，当父类的age是pretected时，继承子类的方法也可以读取age
+//console.log(s1.getAge())//错误，当父类的age是private时，继承子类的方法不可读取age
+```
+#### set
+``` javascript
+class Man{
+    private _age:number;
+    constructor(age:number){
+        this._age = age;
+    };
+    set age(newAge:number){
+        if(newAge < 200){
+            this._age = newAge
+        }    
+    };
+    get age():number{
+        return this._age
+    }
+}
+let m1:Man = new Man(10)
+m1.age = 201
+console.log(m1.age) //10
+m1.age = 100
+console.log(m1.age) //100
+```
+#### static
+``` javascript
+class Teacher{
+    age:number;
+    static work:string = '人民教师最光荣';
+    constructor(age:number){
+        this.age = age;
+    }
+}
+let t1:Teacher = new Teacher(10)
+//console.log(t1.work) //错误，因为静态成员属于类
+console.log(Teacher.work)//正确
+```
+#### 泛型
+``` javascript
+/**
+ * 泛型就是把类型也以参数的形式传入，定制类型使用的
+ * 
+ */
+function fn<T>(x:T,y:T):any{
+    return x
+}
+fn<string>('a','b');
+fn<number>(1,1)
+```
