@@ -1,3 +1,13 @@
+var Person = (function () {
+    function Person() {
+    }
+    Person.prototype.say = function () {
+        console.log(this.name);
+    };
+    return Person;
+}());
+var p1 = new Person();
+p1.say();
 function fn1(x, y) {
     return x + y;
 }

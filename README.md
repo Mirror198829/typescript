@@ -1,6 +1,8 @@
 # typescript
-ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能
+ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能  
+![avatar](https://mirror198829.github.io/static/github/ts.png)
 ## 基础类型
+![avatar](https://mirror198829.github.io/static/github/type.png)
 ``` javascript
  //布尔类型
  let isShow: boolean = false;
