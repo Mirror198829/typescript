@@ -27,10 +27,11 @@ ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts�
  let x: [string,number];
  x = ['hello',10]
 
- /*
-  枚举enum
-  是对js标准数据类型的补充，使用枚举类型可以为一组数值赋予友好的名字
- */
+ /**
+  * 枚举enum
+  * 是对js标准数据类型的补充，使用枚举类型可以为一组数值赋予友好的名字
+  * 枚举就是把所有可能的值都展示出来
+  * */
 enum Color {Red,Green,Blue}
 let c:Color = Color.Green
 console.log(c) //1
@@ -43,6 +44,14 @@ console.log(c1) //2
 enum Color2 {Red = 1, Green, Blue}
 let colorName: string = Color2[2];
 console.log(colorName);  // 显示'Green'因为上面代码里它的值是2
+
+//示例2
+enum GENDER{
+    MALE,
+    FEMALE
+}
+let sex:GENDER = GENDER.MALE
+console.log(`性别是：${sex}`)
 
 /**
  * Any
