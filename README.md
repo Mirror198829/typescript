@@ -1,5 +1,9 @@
 # typescript
-ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能  
+ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能    
+1.编译型语言  
+2.强类型  
+3.真正的面向对象：有接口、有泛型、有枚举、有访问修饰符  
+
 ## 基础类型
 ![avatar](https://mirror198829.github.io/static/github/type.png)
 ``` javascript
