@@ -2,7 +2,7 @@
  * @Author: caojing https://github.com/Mirror198829 
  * @Date: 2018-10-12 09:47:13 
  * @Last Modified by: caojing https://github.com/Mirror198829
- * @Last Modified time: 2018-10-12 11:16:47
+ * @Last Modified time: 2018-10-12 16:00:22
  */
 
 //示例1：基本的一个接口写法，等同于下面的示例2
@@ -44,4 +44,4 @@ class Animal{
     }
 }
 let a1:Animal = new Animal('dog',18)
-a1.sing()
+a1.sing() 

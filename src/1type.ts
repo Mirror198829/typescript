@@ -2,7 +2,7 @@
  * @Author: caojing https://github.com/Mirror198829 
  * @Date: 2018-10-10 10:45:50 
  * @Last Modified by: caojing https://github.com/Mirror198829
- * @Last Modified time: 2018-10-10 15:01:20
+ * @Last Modified time: 2018-10-12 16:03:15
  */
 
  //基础类型
@@ -53,7 +53,13 @@ let res
 if(res == obj.success){
 
 }
-
+//示例2
+enum GENDER{
+    MALE,
+    FEMALE
+}
+let sex:GENDER = GENDER.MALE
+console.log(`性别是：${sex}`)
 /**
  * Any
  * 为不清楚类型的变量指定一个类型
