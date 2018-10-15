@@ -118,3 +118,5 @@ let strLength: number = (<string>someValue).length;
 //另一个as语法，在ts的jsx时，只有as语法
 let someValue1: any = "this is a string";
 let strLength1: number = (someValue as string).length;
+
+

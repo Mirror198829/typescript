@@ -114,6 +114,27 @@ let strLength: number = (<string>someValue).length;
 let someValue1: any = "this is a string";
 let strLength1: number = (someValue as string).length;
 ```
+
+#### 类型推测(隐式类型声明)
+tsc编译器会根据类型初始值推测类型
+``` javascript
+let abc = 123
+abc = 'ccc' //报错，上一句tsc推测其为数字类型，所以第二局赋值为字符串报错
+
+//上述的写法等价于以下写法
+let abc:number = 123
+
+let d;
+//等价于
+let d:any
+```
+#### 联合类型
+``` javascript
+let connect : number | string
+connect = 123
+connect = '123'
+connect = true //错误
+```
 ## 类
 ``` javascript
 //es6,写法更加繁复
