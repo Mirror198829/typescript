@@ -1,5 +1,5 @@
 # typescript
-ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能    
+ts是ecmascript的超集，它是基于最新的ecmascript的标准，同时ts也实现了ecmascrpt尚未实现的功能。微软制造。   
 1.编译型语言  
 2.强类型  
 3.真正的面向对象：有接口、有泛型、有枚举、有访问修饰符  
@@ -54,7 +54,8 @@ let sex:GENDER = GENDER.MALE
 console.log(`性别是：${sex}`)
 
 /**
- * Any
+ * Any 
+ * Any是变体变量，原来js的变量就是变体变量
  * 为不清楚类型的变量指定一个类型
  */
 let notSure: any = 4;
@@ -69,6 +70,7 @@ let anyLst: any[] = [1,true,'free'];
  * 当一个函数没有返回值时，通常会见到其返回值类型时void
  */
 function warnUser():void{
+
     console.log('this is void type')
 }
 //声明一个void类型的变量没有大作用，因为只能赋予undefined或者null
