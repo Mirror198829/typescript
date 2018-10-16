@@ -176,6 +176,12 @@ console.log(s1.gender)
 console.log(s1.getAge())//18，当父类的age是pretected时，继承子类的方法也可以读取age
 //console.log(s1.getAge())//错误，当父类的age是private时，继承子类的方法不可读取age
 ```
+#### 访问修饰符
+|修饰符|内容|特点|
+|---|---|---|
+|public|公有|任何人可以访问|
+|private|私有|只有类内部可以访问|
+|protected|受保护|只有子类能访问|
 #### set
 ``` javascript
 class Man{
@@ -225,4 +231,5 @@ fn<number>(1,1)
 ```
 ## 接口 Interfaces
 ts的核心是类型检查  
-接口的作用是规范类型。用来建立某种代码约定，使得其他开发者在调用某个方法或创建新的类时必须遵循接口所定义的代码约定。js中并无该概念。两个关键字`interface`和`implements`
+接口的作用是规范类型。用来建立某种代码约定，使得其他开发者在调用某个方法或创建新的类时必须遵循接口所定义的代码约定。js中并无该概念。两个关键字`interface`和`implements`  
+这边interface与Java的接口是有区别的  
