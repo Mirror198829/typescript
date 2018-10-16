@@ -2,11 +2,11 @@
  * @Author: caojing 
  * @Date: 2018-10-16 15:33:22 
  * @Last Modified by: caojing
- * @Last Modified time: 2018-10-16 15:40:18
+ * @Last Modified time: 2018-10-16 16:37:30
  */
 class Per{
-    name:string;
-    age:number;
+    public name:string;
+    private age:number;
     constructor(name:string,age:number){
         this.name = name
         this.age = age

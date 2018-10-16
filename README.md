@@ -218,16 +218,24 @@ let t1:Teacher = new Teacher(10)
 console.log(Teacher.work)//正确
 ```
 #### 泛型
+泛型就是把类型也以参数的形式传入，定制类型使用的
 ``` javascript
-/**
- * 泛型就是把类型也以参数的形式传入，定制类型使用的
- * 
- */
 function fn<T>(x:T,y:T):any{
     return x
 }
 fn<string>('a','b');
 fn<number>(1,1)
+```
+``` javascript
+class Calc<T,P>{
+    width:T;
+    height:P;
+    constructor(width:T,height:P){
+        this.width = width
+        this.height = height
+    }
+}
+let obj1 = new Calc<number,number>(10,20)
 ```
 ## 接口 Interfaces
 ts的核心是类型检查  
